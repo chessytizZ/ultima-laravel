@@ -15,10 +15,21 @@
 //     $genero= App\Genero::find(2);
 //     return $genero->posts;
 // });
-Route::get('/home', function () {
-    return view('inicio');
+Route::get('/', function () {
+    return view('welcome');
 });
-
+Route::get('/post', function () {
+    return view('formulario_post');
+});
+Route::get('/video', function () {
+    return view('formulario_video');
+});
+Route::get('/genero', function () {
+    return view('formulario_genero');
+});
+Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('/login', 'Auth\LoginController@Login')->name('login');
+Route::get('/inicio', 'InicioController@index')->name('inicio');
 Route::get('/tareados', 'TareadosController@create')->name('tareados');
 Route::get('/video/{id}', 'VideoController@individual')->name('video');
 Route::get('/post/{id}', 'PostController@individual')->name('post');

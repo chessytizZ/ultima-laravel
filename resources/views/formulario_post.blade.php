@@ -14,40 +14,33 @@
 </head>
 
 <body>
-<style>
-.padre{
-    height: 300px!important;
-    width: 300px!important;
-}
-form{
-    top: 18px;
-    position: relative;
-    margin-left: 20px;
-    font-family: 'Big Shoulders Display', cursive;
-    font-size: 20px!important;
-    }
-</style>
+
   <div class="padre">
       <form action="ventas.php" method="POST">
-            <div class="form-group">
-                    <label for="exampleFormControlSelect1">Seleccione qué desea hacer.. </label>
-                    <div class="col-md-6"></div>
-                    <select name="departamentos" class="form-control" id="exampleFormControlSelect1">
-                        <option value="">Crear</option>
-                        <option value="">Editar</option>
-                        <option value="">Modificar</option>
-                        <option value="">Eliminar</option>
-                    </select>
-                  </div>
           <div class="form-group">
+            <label for="exampleFormControlSelect1">Seleccione .. </label>
             <div class="col-md-6"></div>
             <select name="departamentos" class="form-control" id="exampleFormControlSelect1">
                 <option value="">Post</option>
                 <option value="">Video</option>
                 <option value="">Genero</option>
-
+            
             </select>
           </div>
+          <label for="exampleFormControlSelect1">Nombre del post </label>
+          <div class="col-md-6"></div>
+
+          <input name="nombre_producto" class="form-control" type="text" placeholder="Muñeca">
+
+          <label for="exampleFormControlSelect1">contenido del post</label>
+          <div class="col-md-6"></div>
+
+          <input name="precio" class="form-control" type="text" placeholder="1,000">
+
+          <label for="exampleFormControlSelect1">genero del post</label>
+          <div class="col-md-6"></div>
+
+          <input name="unidades_vendidas" class="form-control" type="text" placeholder="100">
 
           <div class="col-md-6"></div>
           <button type="submit" class="btn">Enviar</button>
