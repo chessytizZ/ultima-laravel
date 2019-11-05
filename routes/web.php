@@ -29,6 +29,10 @@ Route::get('/genero', function () {
 });
 Route::get('/login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('/login', 'Auth\LoginController@Login')->name('login');
+Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+Route::get('/register', 'Auth\RegisterController@showRegistrationForm')->name('register');
+Route::post('/register', 'Auth\RegisterController@register')->name('register');
+
 Route::get('/inicio', 'InicioController@index')->name('inicio');
 Route::get('/tareados', 'TareadosController@create')->name('tareados');
 Route::get('/video/{id}', 'VideoController@individual')->name('video');

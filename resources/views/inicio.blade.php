@@ -26,9 +26,22 @@ form{
     font-family: 'Big Shoulders Display', cursive;
     font-size: 20px!important;
     }
+
+.boton{
+    position: relative;
+    height: 100px;
+    background-color:deeppink;
+    width: 300px;
+    left:50%;
+}
 </style>
+<form action="/logout">
+    <div class="form-group">
+ <button type="submit" class="boton">Salir sesion</button>
+</form>
+
   <div class="padre">
-      <form action="ventas.php" method="POST">
+      <form action="/post" method="POST">
             <div class="form-group">
                     <label for="exampleFormControlSelect1">Seleccione qué desea hacer.. </label>
                     <div class="col-md-6"></div>
