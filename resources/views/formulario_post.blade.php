@@ -17,33 +17,24 @@
 
   <div class="padre">
       <form action="ventas.php" method="POST">
-          <div class="form-group">
-            <label for="exampleFormControlSelect1">Seleccione .. </label>
-            <div class="col-md-6"></div>
-            <select name="departamentos" class="form-control" id="exampleFormControlSelect1">
-                <option value="">Post</option>
-                <option value="">Video</option>
-                <option value="">Genero</option>
-            
-            </select>
-          </div>
+
           <label for="exampleFormControlSelect1">Nombre del post </label>
           <div class="col-md-6"></div>
 
-          <input name="nombre_producto" class="form-control" type="text" placeholder="Muñeca">
+          <input name="nombre_producto" class="form-control" type="text" placeholder="Nombre">
 
           <label for="exampleFormControlSelect1">contenido del post</label>
           <div class="col-md-6"></div>
 
-          <input name="precio" class="form-control" type="text" placeholder="1,000">
+          <input name="precio" class="form-control" type="text" placeholder="Hola!">
 
           <label for="exampleFormControlSelect1">genero del post</label>
           <div class="col-md-6"></div>
 
-          <input name="unidades_vendidas" class="form-control" type="text" placeholder="100">
+          <input name="unidades_vendidas" class="form-control" type="text" placeholder="Rock">
 
           <div class="col-md-6"></div>
-          <button type="submit" class="btn">Enviar</button>
+          <button type="submit" class="btn">Crear</button>
         </form>
 
 

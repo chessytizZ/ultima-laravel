@@ -14,36 +14,38 @@
 </head>
 
 <body>
-
+    <style>
+        .padre{
+            height: 200px!important;
+            width: 300px!important;
+        }
+        form{
+            top: 18px;
+            position: relative;
+            margin-left: 20px;
+            font-family: 'Big Shoulders Display', cursive;
+            font-size: 20px!important;
+            }
+        
+        .boton{
+            position: relative;
+            height: 100px;
+            background-color:deeppink;
+            width: 300px;
+            left:50%;
+        }
+        </style>
   <div class="padre">
       <form action="ventas.php" method="POST">
-          <div class="form-group">
-            <label for="exampleFormControlSelect1">Seleccione .. </label>
-            <div class="col-md-6"></div>
-            <select name="departamentos" class="form-control" id="exampleFormControlSelect1">
-                <option value="">Post</option>
-                <option value="">Video</option>
-                <option value="">Genero</option>
-            
-            </select>
-          </div>
-          <label for="exampleFormControlSelect1">Nombre del post </label>
+          
+          <label for="exampleFormControlSelect1">Tipo de genero </label>
           <div class="col-md-6"></div>
 
-          <input name="nombre_producto" class="form-control" type="text" placeholder="Muñeca">
+          <input name="nombre_producto" class="form-control" type="text" placeholder="Pop">
 
-          <label for="exampleFormControlSelect1">contenido del post</label>
+   
           <div class="col-md-6"></div>
-
-          <input name="precio" class="form-control" type="text" placeholder="1,000">
-
-          <label for="exampleFormControlSelect1">genero del post</label>
-          <div class="col-md-6"></div>
-
-          <input name="unidades_vendidas" class="form-control" type="text" placeholder="100">
-
-          <div class="col-md-6"></div>
-          <button type="submit" class="btn">Enviar</button>
+          <button type="submit" class="btn">Crear</button>
         </form>
 
 

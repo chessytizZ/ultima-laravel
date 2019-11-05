@@ -14,33 +14,43 @@
 </head>
 
 <body>
-
+    <style>
+        .padre{
+            height: 290px!important;
+            width: 300px!important;
+        }
+        form{
+            top: 18px;
+            position: relative;
+            margin-left: 20px;
+            font-family: 'Big Shoulders Display', cursive;
+            font-size: 20px!important;
+            }
+        
+        .boton{
+            position: relative;
+            height: 100px;
+            background-color:deeppink;
+            width: 300px;
+            left:50%;
+        }
+        </style>
   <div class="padre">
       <form action="ventas.php" method="POST">
-          <div class="form-group">
-            <label for="exampleFormControlSelect1">Seleccione genero </label>
-            <div class="col-md-6"></div>
-            <select name="departamentos" class="form-control" id="exampleFormControlSelect1">
-                <option value="">Post</option>
-                <option value="">Video</option>
-                <option value="">Genero</option>
-            
-            </select>
-          </div>
-          <label for="exampleFormControlSelect1">Titulo del post </label>
+          <label for="exampleFormControlSelect1">Titulo del video </label>
           <div class="col-md-6"></div>
 
           <input name="nombre_producto" class="form-control" type="text" placeholder="Muñeca">
 
-          <label for="exampleFormControlSelect1">contenido</label>
+          <label for="exampleFormControlSelect1">url</label>
           <div class="col-md-6"></div>
 
           <div class="form-group">
-                
+
                 <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
               </div>
 
-          <button type="submit" class="btn">Enviar</button>
+          <button type="submit" class="btn">Crear</button>
         </form>
 
 
